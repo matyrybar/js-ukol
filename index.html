@@ -8,24 +8,36 @@
 </head>
 <body>
 
-<div id="testElement">
-  Toto je <strong>testovací</strong> element.<br>
-  <span>Má i nějaké <em>HTML značky</em> uvnitř.</span>
+<div class="Form">
+
+    <div class="inputy">
+        <input id="titulek" class="titulek" type="titulek">
+
+        <select id="value" class="value">
+            <option value="nizka">Nízká</option>
+            <option value="stredni">Střední</option>
+            <option value="vysoka">Vysoká</option>
+        </select>
+
+        <input type="date" id="datum" class="druhy"
+        value="2018-07-22" min="2018-01-01" max="2018-12-31" />
+
+        <button id="button-submit">Uložit</button>
+
+    </div>
+
+    <div class="ulozene-ukoly">
+
+        <h1> Úkoly</h1>
+
+        <div class="import-ukolu">
+            <p>Zde budou úkoly, které jsem sem nestihl dát</p>
+            <div id="result"></div>
+        </div>
+
+    </div>
+
 </div>
-
-<div id="result">
-  <!-- Zde se zobrazí výsledky -->
-</div>
-
-
-<div id="container">
-
-</div>
-
-
-<button id="elementButton">
-    Nový Element 🌈tc
-</button>
 
 </body>
 </html>

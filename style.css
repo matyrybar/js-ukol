@@ -1,6 +1,62 @@
-.newButton {
-    padding: 50px;
-    border: solid 1px black;
-    display: inline-block;
+body{
+    margin: 0;
+}
+
+.Form{
+    max-width: 500px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    font-family: "SF UI  Text";
+    font-size: 40px;
+    font-weight: bold;
+}
+.inputy{
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #eff2fe;
+    width: 410px;
+
+}
+
+.titulek{
+    border: 1px #838cf1 solid;
+    border-radius: 8px;
+    margin-top: 20px;
+    width: 400px;
+    height: 40px;
+}
+.druhy{
+    border: 1px #838cf1 solid;
+    margin-top: 20px;
+    width: 170px;
+    height: 40px;
+    border-radius: 8px;
+}
+.value{
+    border: 1px #838cf1 solid;
+    margin-top: 20px;
+    margin-top: 20px;
+    width: 175px;
+    border-radius: 8px;
+    height: 40px;
+    font-family: "Arial";
+}
+button{
+    margin-top: 100px;
+    width: 140px;
+    height: 50px;
     border-radius: 10px;
+    color: black;
+    background-color: white;
+    border: 1px white solid;
+    font-family: "SF UI  Text";
+    font-weight: bold;
+    font-size: 20px;
+
 }

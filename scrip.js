@@ -1,36 +1,40 @@
-function getInnerText() {
-    let element = document.getElementById("testElement")
-    let result = document.getElementById("result")
-    return  "result:" + element.innerText;
-}
-
-function getTextContent() {
-    let element = document.getElementById("testElement")
-    let result = document.getElementById("result")
-    return "result:" + element.textContent;
-}
 
 
+const button = document.getElementById("button-submit")
 
-function createElements(){
-    const newDiv = document.createElement("div");
 
-    newDiv.textContent = getTextContent();
+const inputName = document.getElementById("titulek")
 
-    const newDiv2 = document.createElement("div");
+const inputVaha = document.getElementById("value")
 
-    newDiv.innerText = getInnerText();
+const inputDatum = document.getElementById("datum")
 
-    const container = document.getElementById("container");
 
-    newDiv.className = "newButton";
+button.addEventListener("click", (event) => {
 
-    container.appendChild(newDiv);
-    container.appendChild(newDiv2)
+function logovani() {
+    const inputName = document.getElementById("titulek")
+
+    const inputVaha = document.getElementById("value")
+
+    const inputDatum = document.getElementById("datum")
 
 }
+    console.log(inputName.value)
+    console.log(inputVaha.value)
+    console.log(inputDatum.value)
+} )
 
-let btn = document.querySelector("#elementButton")
+//vzal jsem někde na internetu//
 
-btn.addEventListener("click", createElements)
+let submitButton = document.querySelector("#button-submit"),
+    showResult = document.getElementById("result").innerHTML,
+    weightsForLeftAndRightSides = document.querySelector("#firstinput").value;
+
+
+function weightBalancer() {
+    showResult = weightsForLeftAndRightSides;
+    console.log(weightsForLeftAndRightSides);
+}
+
 
